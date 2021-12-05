@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Build a Survey Form using HTML and CSS
+    </title>
+
+    <style>
+        /* Styling the Body element i.e. Color,
+		Font, Alignment */
+        body {
+            background-color: #05c46b;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #fff;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input,
+		select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio
+		button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        /* Styling Button */
+        button {
+            background-color: #05c46b;
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            alert("Thank you for applying! We'll contact you soon");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>GeeksforGeeks Survey Form</h1>
+
+    <!-- Create Form -->
+    <form id="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" required id="name" placeholder="Enter your name" />
+        </div>
+
+        <div class="form-control">
+            <label for="contact" id="label-contact">
+                Contact
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="number" id="contact" placeholder="Enter your contact" required />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" id="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="age" placeholder="Enter your age" required />
+        </div>
+
+        <div class="form-control">
+            <label for="dob" id="label-age">
+                Date Of Birth
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" id="dob" placeholder="Enter your Date Of Birth" required />
+        </div>
+
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Select Course
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="course">Course</option>
+                <option value="bca">BCA</option>
+                <option value="bmm">BMM</option>
+                <option value="ba">BA</option>
+                <option value="bms">BMS</option>
+                <option value="bsc">B.Sc</option>
+                <option value="llb">LLB</option>
+                <option value="bpharm">B.Pharm</option>
+                <option value="bva">BVA</option>
+                <option value="btech">B.Tech</option>
+                <option value="homescience">Home Science</option>
+                <option value="ma">M.A.</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <label>
+                Gender
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="female" required>
+                <input type="radio" id="female" name="female">Female</input>
+            </label>
+            <label for="male" required>
+                <input type="radio" id="male" name="male">Male</input>
+            </label>
+            <label for="other" required>
+                <input type="radio" id="othe" r name="other">Other</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="hsc" id="label-hsc">
+                Enter 12th percentage
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="number" id="hsc" placeholder="Enter your percentage" required />
+        </div>
+
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit" onclick="myFunction()">
+            Submit
+        </button>
+    </form>
+</body>
+
+</html>
