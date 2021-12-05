@@ -53,3 +53,12 @@ img {
     animation-name: fade;
     animation-duration: 1.5s;
 }
+
+footer{
+    position: fixed; 
+    margin-bottom: 0%;
+    background: rgb(11, 163, 163); 
+    color: black; 
+    width: 100%; 
+    height: 5%;
+}
